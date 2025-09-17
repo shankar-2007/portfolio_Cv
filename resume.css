@@ -1,0 +1,170 @@
+:root {
+    --neon-red: #ff003c;
+    --neon-pink: #ff2a6d;
+    --dark-bg: #0a0a0a;
+    --darker-bg: #050505;
+    --text-light: #ffffff;
+    --text-dim: #aaaaaa;
+    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: var(--dark-bg);
+  color: #333;
+  padding: 20px;
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  background: var(--dark-bg);
+  border: 3px solid var(--neon-red);
+  padding: 30px;
+  margin: auto;
+  box-shadow: 0 0 10px var(--text-light);
+  border-radius: 10px;
+}
+h1{
+  color:var(--neon-red)
+}
+h2 {
+   color:var(--neon-red);
+}
+ul {
+  padding-left: 20px;
+}
+.section {
+  margin-bottom: 25px;
+}
+.contact{
+  color:var(--neon-red);
+}
+.contact a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--neon-red);
+} 
+.Education-button{
+  background-color: var(--neon-red);
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  height: 36px;
+  width: 90px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  a{color: var(--text-light);}
+}
+.Education-button:hover{
+  box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.8;    
+    }
+.Education-button:active{
+  box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.5;
+    }
+.SoftSkills-button{
+  background-color: var(--neon-red);
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  height: 36px;
+  width: 90px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  a{color:var(--text-light);}
+}
+.SoftSkills-button:hover{
+  box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.8;    
+    }
+.SoftSkills-button:active{
+  box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.5;
+    }
+.Project-button{
+  background-color: var(--neon-red);
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  height: 36px;
+  width: 90px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  a{color: var(--text-light);}
+}
+.Project-button:hover{
+    box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.8;    
+    }
+.Project-button:active{
+    box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.5;
+    }
+.TechnicalSkills-button{
+  background-color: var(--neon-red);
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  height: 36px;
+  width: 125px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  a{color:var(--text-light);}
+}
+.TechnicalSkills-button:hover{
+    box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.8;    
+    }
+.TechnicalSkills-button:active{
+    box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.5;
+    }
+.Certification-button{
+  background-color: var(--neon-red);
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+  height: 36px;
+  width: 100px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.Certification-button:hover{
+    box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.8;    
+    }
+.Certification-button:active{
+    box-shadow: 0 0 20px var(--neon-red);
+    opacity: 0.5;
+    }
+
+.Certification-button a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+p{
+  color: var(--neon-red);
+}
+
+li{
+  color: var(--text-light);
+}
+
+.links{
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.para{
+  color: var(--text-light);
+}
