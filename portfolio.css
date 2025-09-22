@@ -1,6 +1,6 @@
 :root {
-    --neon-red: #ff003c;
-    --neon-pink: #ff2a6d;
+    --neon-red: #2563eb;
+    --neon-pink: #1e40af;
     --dark-bg: #0a0a0a;
     --darker-bg: #050505;
     --text-light: #ffffff;
@@ -36,7 +36,7 @@ body {
     z-index: 1000;
     backdrop-filter: blur(10px);
     background: rgba(10, 10, 10, 0.7);
-    border-bottom: 1px solid rgba(255, 0, 60, 0.1);
+    border-bottom: 1px solid rgba(37, 99, 235, 0.7);
 }
 
 .logo {
@@ -46,11 +46,12 @@ body {
     color: var(--text-light);
     text-decoration: none;
     letter-spacing: 2px;
+    text-shadow:0 0 10px rgba(255,255,255,0.5);
 }
 
 .logo span {
     color: var(--neon-red);
-    text-shadow: 0 0 10px rgba(255, 0, 60, 0.7);
+    text-shadow: 0 0 10px rgba(37, 99, 235, 0.7);
 }
 
 .nav-links {
@@ -175,7 +176,7 @@ h1, h2 {
     font-weight: 600;
     font-size: 1.1rem;
     transition: var(--transition);
-    box-shadow: 0 0 25px rgba(255, 0, 60, 0.3);
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.7);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -255,7 +256,7 @@ h1, h2 {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     object-fit: cover;
     border: 6px solid transparent;
-    box-shadow: 0 0 50px var(--neon-red), 0 0 100px rgba(255, 0, 60, 0.5), 0 0 150px rgba(255, 0, 60, 0.3);
+    box-shadow: 0 0 50px var(--neon-red), 0 0 100px rgba(37, 99, 255, 0.5), 0 0 150px rgba(37, 99, 235, 0.3);
     animation: glow 3s infinite alternate, morph 12s ease-in-out infinite;
     position: relative;
     z-index: 10;
@@ -263,11 +264,11 @@ h1, h2 {
 
 @keyframes glow {
     0% {
-        box-shadow: 0 0 40px var(--neon-red), 0 0 80px rgba(255, 0, 60, 0.5), 0 0 120px rgba(255, 0, 60, 0.3);
+        box-shadow: 0 0 40px var(--neon-red), 0 0 80px rgba(37, 99, 235, 0.5), 0 0 120px rgba(37, 99, 235, 0.3);
         border-color: var(--neon-red);
     }
     100% {
-        box-shadow: 0 0 60px var(--neon-red), 0 0 120px rgba(255, 0, 60, 0.7), 0 0 180px rgba(255, 0, 60, 0.5);
+        box-shadow: 0 0 60px var(--neon-red), 0 0 120px rgba(37, 99, 235, 0.7), 0 0 180px rgba(37, 99, 235, 0.5);
         border-color: var(--neon-red);
     }
 }
@@ -370,6 +371,16 @@ h1, h2 {
     transform: scale(1.05);
     color: var(--neon-blue);
 }
+
+/* service */
+#services .grid, .lessons-grid, .projects {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+#services .card i { font-size: 40px; color: var(--neon-red); margin-bottom: 12px; }
+.lesson-card { overflow: hidden; }
+.lesson-card img { width: 100%; height: 180px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,.08); }
+.lesson-card h3 { padding: 14px 16px; color: var(--white); }
 
 /* Projects and Internships */
 .project {
@@ -487,11 +498,12 @@ footer {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: var(--text-light);
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
 .footer-logo span {
     color: var(--neon-red);
-    text-shadow: 0 0 10px rgba(255, 0, 60, 0.7);
+    text-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
 }
 
 .footer-text {
@@ -525,7 +537,7 @@ footer {
     background: var(--neon-red);
     color: #000;
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(255, 0, 60, 0.4);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
 }
 
 .copyright {
