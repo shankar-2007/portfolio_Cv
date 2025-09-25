@@ -605,3 +605,58 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+
+/* text - animation */
+
+/* Layout */
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.static-text {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  /* line-height: 100px; */
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 10px var(--text-light);
+}
+
+.dynamic-text {
+  list-style: none;
+  margin: 0;
+  height: 90px;            
+  line-height: 90px;       
+  overflow: hidden;        
+  border-radius: 8px;
+  position: relative;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 5px var(--neon-red);
+}
+
+.dynamic-text li {
+  color: var(--neon-red);
+  font-size: 1.8rem;
+  font-weight: 200;
+  position: relative;
+  height: 90px;
+  line-height: 90px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: slide 5s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% { transform: translateY(-270px); }
+}
+
+.dynamic-text li span {
+  position: relative;
+  display: inline-block;
+  padding-right: 0.4em; 
+}
