@@ -618,10 +618,9 @@ footer {
 
 .static-text {
   color: #fff;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 1.8rem;
   white-space: nowrap;
-  /* line-height: 100px; */
   font-family: "Orbitron", sans-serif;
   text-shadow: 0 0 10px var(--text-light);
 }
@@ -641,7 +640,7 @@ footer {
 .dynamic-text li {
   color: var(--neon-red);
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 500;
   position: relative;
   height: 90px;
   line-height: 90px;
@@ -660,3 +659,4 @@ footer {
   display: inline-block;
   padding-right: 0.4em; 
 }
+
